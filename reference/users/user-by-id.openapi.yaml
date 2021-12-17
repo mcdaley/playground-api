@@ -1,0 +1,18 @@
+# -----------------------------------------------------------------------------
+# reference/users/user-by-id.openapi.yaml
+# ----------------------------------------------------------------------------- 
+get:
+  tags:
+    - Consumer
+  description:  Retrieve the user details
+  parameters:
+    - $ref: '../../models/parameters/user-id.param.yaml'
+  responses:
+    '200':
+      description:  'OK'
+      content:
+        application/json:
+          schema:
+            properties: 
+              user:
+                $ref: '../../models/user/user.model.yaml'

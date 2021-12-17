@@ -1,0 +1,12 @@
+# -----------------------------------------------------------------------------
+# parameters/x-request-id.param.yaml
+# ----------------------------------------------------------------------------- 
+name:     X-Request-Id
+in:       path
+style:    simple
+explode:  false
+schema:
+  type:         string
+  format:       uuid
+  example:      ac3864c5-7c73-45e3-a20c-736a61252f8f
+  description:  Unique client provided request uuid

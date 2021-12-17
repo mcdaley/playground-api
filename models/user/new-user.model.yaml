@@ -1,0 +1,15 @@
+# -----------------------------------------------------------------------------
+# definitions/user/new-user.model.yaml
+# ----------------------------------------------------------------------------- 
+type: object
+properties:
+  first_name:
+    type:       string
+    maxLength:  64
+    example:    John
+  last_name:
+    type:       string
+    maxLength:  64
+    example:    Doe
+  address:
+    $ref: '../address/new-address.model.yaml'

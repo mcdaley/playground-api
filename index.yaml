@@ -1,0 +1,23 @@
+# -----------------------------------------------------------------------------
+# index.yaml
+# -----------------------------------------------------------------------------
+openapi: 3.0.0
+servers:
+  - description:  Playground API
+    url:          https://virtserver.swaggerhub.com/mcdaley4/BaaS/1.0.0
+info:
+  title:        Playground APIs
+  version:      "1.0.0"
+  description:  Prototype for multifile swagger definitions
+tags:
+  - name:         Consumer
+    description:  Consumer APIs
+  - name:         Account
+    description:  Account APIs
+paths:
+  /users:
+    $ref: './reference/users/user.openapi.yaml'
+  /users/{user-id}:
+    $ref: './reference/users/user-by-id.openapi.yaml'
+  /accounts:
+    $ref: './reference/accounts/accounts.openapi.yaml'

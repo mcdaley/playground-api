@@ -1,0 +1,11 @@
+# -----------------------------------------------------------------------------
+# definitions/user/user.model.yaml
+# ----------------------------------------------------------------------------- 
+type: object
+allOf:
+  - $ref: './new-user.model.yaml'
+properties:
+  id:
+    type:       string
+    format:     uuid
+    example:    77cc1c6a-d932-4e6b-9ef5-31e2d2ef48b4

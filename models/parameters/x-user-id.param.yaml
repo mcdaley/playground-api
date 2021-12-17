@@ -1,0 +1,12 @@
+# -----------------------------------------------------------------------------
+# parameters/x-user-id.param.yaml
+# ----------------------------------------------------------------------------- 
+name:     X-User-Id
+in:       path
+style:    simple
+explode:  false
+schema:
+  type:         string
+  format:       uuid
+  example:      8261252c-0055-41e4-8b75-357e5b354863
+  description:  Unique user uuid

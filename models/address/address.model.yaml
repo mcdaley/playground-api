@@ -1,0 +1,13 @@
+# -----------------------------------------------------------------------------
+# models/address/address.model.yaml
+# -----------------------------------------------------------------------------
+type:   object
+required:
+  - id
+properties: 
+  id:
+    type:     string
+    format:   uuid
+    example:  7d6bd3d4-25f8-4639-914b-5011d1198602
+allOf:
+  - $ref: './new-address.model.yaml'

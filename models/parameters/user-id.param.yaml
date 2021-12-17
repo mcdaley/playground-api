@@ -1,0 +1,12 @@
+# -----------------------------------------------------------------------------
+# parameters/user-id.param.yaml
+# ----------------------------------------------------------------------------- 
+name:     user-id
+in:       path
+style:    simple
+explode:  false
+schema:
+  type:         string
+  format:       uuid
+  example:      2811ff23-4571-4fd9-ad5c-1895059bf66b
+  description:  Unique consumer uuid

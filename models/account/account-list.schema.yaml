@@ -1,0 +1,9 @@
+# -----------------------------------------------------------------------------
+# resources/accounts/schemas/account-list.schema.yaml
+# -----------------------------------------------------------------------------
+type: object
+properties:
+  accounts: 
+    type:   array
+    items:
+      $ref: './account.schema.yaml'

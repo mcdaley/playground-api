@@ -1,0 +1,17 @@
+# -----------------------------------------------------------------------------
+# resources/accounts/paths/accounts.api.yaml
+# -----------------------------------------------------------------------------
+get:
+  tags:
+    - Account
+  description:  Retrieve a list of a user's accounts. 
+  parameters:
+    - $ref: '../../models/parameters/x-user-id.param.yaml'
+    - $ref: '../../models/parameters/x-request-id.param.yaml'
+  responses:
+    '200':
+      description:  'OK'
+      content:
+        application/json:
+          schema:
+            $ref: '../../models/account/account-list.schema.yaml'

@@ -1,0 +1,10 @@
+# -----------------------------------------------------------------------------
+# models/lib/state.model.yaml
+# -----------------------------------------------------------------------------
+type: string
+description: Two character state code. 
+enum:
+  - CA 
+  - NY 
+  - MA
+example: CA

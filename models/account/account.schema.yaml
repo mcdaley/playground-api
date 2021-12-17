@@ -1,0 +1,50 @@
+# -----------------------------------------------------------------------------
+# resources/accounts/schemas/account.schema.yaml
+# -----------------------------------------------------------------------------
+type: object
+allOf:
+  - $ref: './new-account.schema.yaml'
+properties:
+  id:
+    type:         string
+    format:       uuid
+    example:      671c272f-370f-40f9-b863-7531aa696b4a
+  account_number:
+    type:         string
+    maxLength:    9
+    description:  Bank account number
+    example:      'X23456789'
+  routing_number:
+    type:         string
+    maxLength:    9
+    description:  Bank routing number required for ACH transfers
+    example:      987654321
+  ## currency:
+  ##   $ref:         '#/components/schemas/Currency'
+  name_on_account:
+    type:         string
+    maxLength:    64
+    description:  Name of the account owner
+    example:      John Doe
+  account_status:
+    type:         string
+    enum:
+      - open
+      - blocked
+      - closed
+    example:      open
+  account_status_reason:
+    type:         string
+    enum:
+      - customer_request
+    example:      customer_request
+  nickname:
+    type:         string
+    minLength:    4
+    maxLength:    64
+    description:  User defined nickname for the account.
+    example:      John Doe Checking Account
+  usage:
+    type:         string
+    enum:
+      - send_and_receive

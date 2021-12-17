@@ -1,0 +1,20 @@
+# -----------------------------------------------------------------------------
+# models/address/new-address.model.yaml
+# -----------------------------------------------------------------------------
+type: object
+required:
+  - lineOne
+  - city
+  - state
+  - postalCode
+properties:
+  lineOne:
+    type:       string
+    maxLength:  128
+    example:    'One Market St.'
+  city:
+    type:       string
+    maxLength:  128
+    example:    San Francisco
+  state:
+    $ref: '../lib/state.model.yaml'

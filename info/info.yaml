@@ -1,0 +1,8 @@
+title:        Playground APIs
+version:      "1.0.0"
+description:  Prototype for multifile swagger definitions
+contact:
+email:        mike@mcaley.com
+license:
+  name:   Apache 2.0
+  url:    'http://www.apache.org/licenses/LICENSE-2.0.html'

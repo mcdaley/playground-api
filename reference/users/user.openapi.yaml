@@ -1,0 +1,34 @@
+# -----------------------------------------------------------------------------
+# paths/users.api.yaml
+# -----------------------------------------------------------------------------
+get:
+  tags:
+    - Consumer
+  description:  Retrieves a list of consumers
+  parameters:
+    - $ref: '../../models/parameters/user-id.param.yaml'
+  responses:
+    '200':
+      description:  'OK'
+      content:
+        application/json:
+          schema:
+            $ref: '../../models/user/user-list.model.yaml'
+post: 
+  tags:
+    - Consumer
+  description:  Create a new User
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/user/new-user.model.yaml'
+  responses:
+    '201':
+      description: 'OK'
+      content:
+        application/json:
+          schema:
+            properties:
+              user:
+                $ref: '../../models/user/user.model.yaml'

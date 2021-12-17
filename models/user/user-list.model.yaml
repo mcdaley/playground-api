@@ -1,0 +1,10 @@
+# -----------------------------------------------------------------------------
+# definitions/user/user-list.model.yaml
+# ----------------------------------------------------------------------------- 
+type: object
+description: List of users
+properties:
+  users: 
+    type: array
+    items:
+      $ref: './user.model.yaml'

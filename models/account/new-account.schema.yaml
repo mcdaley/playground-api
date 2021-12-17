@@ -1,0 +1,18 @@
+# -----------------------------------------------------------------------------
+# resources/accounts/schemas/new-account.schema.yaml
+# -----------------------------------------------------------------------------
+type: object
+required:
+  - account_type
+properties:
+  account_type:
+    type:         string
+    enum:
+      - Checking
+      - Savings
+    description:  Either checking or savings account
+    example:      checking
+  multiple_participants:
+    type:         string
+    format:       boolean
+    example:      false
